@@ -56,6 +56,7 @@ class _HomeState extends State<Home> {
                   child: const IconWidget(
                     icon: FontAwesomeIcons.mars,
                     text: "MALE",
+                    
                   ),
                   onPressed: () {
                     setState(() {

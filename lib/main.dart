@@ -1,4 +1,7 @@
+
 import 'package:flutter/material.dart';
+import 'package:spinkit_demo/Screen/splash_screen.dart';
+
 import 'Screen/home.dart';
 
 void main() {
@@ -13,6 +16,11 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Flutter Demo',
       debugShowCheckedModeBanner: false,
+      initialRoute: 'splash',
+      routes: {
+        '/': (context) => const Home(),
+        'splash': (context) => const SplashScreen(),
+      },
       theme: ThemeData.dark().copyWith(
         scaffoldBackgroundColor: const Color(0xff0a0321),
         primaryColor: Colors.pink,
@@ -22,8 +30,8 @@ class MyApp extends StatelessWidget {
           color: Color(0xff0a0321),
         ),
       ),
-      home: const Home(),
+      // home: const Home(),
     );
   }
 }
-  
+
